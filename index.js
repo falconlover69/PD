@@ -31,4 +31,4 @@ bot.command('/exams', async (ctx) => {
   await ctx.reply('Список комманд для бота: /rasp - Вывести рассписание занятий. /exams - Вевысти рассписание зачётов и экзаминов');
 });
 
-bot.startPolling();
+bot.startPolling( () => {console.log('Bot is running')});
